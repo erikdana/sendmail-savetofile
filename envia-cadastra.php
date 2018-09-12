@@ -5,7 +5,7 @@
     $content = "nome: ".$_POST['nome'].", ";
     $content .= "email: ".$_POST['email'].", ";
     $content .= "mensagem: ".$_POST['mensagem']."\n";
-    $file = fopen('cadastros.csv','a');
+    $file = fopen('cadastros.csv','a'); // esse arquivo precisa existir
     fwrite($file, $content);
     fclose($file);
  
